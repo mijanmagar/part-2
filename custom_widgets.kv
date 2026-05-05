@@ -1,0 +1,143 @@
+#:kivy 1.0
+
+<Textbox>:
+    hint_text_color: utils.get_color_from_hex("#D0D0D0") 
+    foreground_color: 0, 0, 0, 1   
+    
+    background_normal: ''
+    background_active: ''
+    background_color: 0, 0, 0, 0
+    halign: 'center'
+    padding: (0, self.height / 2.0 - (self.line_height / 2.0))
+    
+    canvas.before:
+        Color:
+            rgba: utils.get_color_from_hex("#F9F9F9")  #
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [5]
+        Color: 
+            rgba: self.hint_text_color if not self.text else self.foreground_color
+
+<DetailTitleLabel>:
+    text: root.title_text
+    bold: True
+    font_size: '28sp'
+    color: utils.get_color_from_hex("#000000")
+    halign: 'left'
+    text_size: self.size
+    size_hint: (1, None)
+    height: self.texture_size[1]
+
+<InformationLabel>:
+    orientation: 'horizontal'
+    size_hint: (1, None)
+    padding: (0, 10)
+    height: self.minimum_height
+
+    Label:
+        text: "\u2022" if root.is_list_item == True else ""
+        bold: True
+        color: utils.get_color_from_hex("#000000")
+        font_size: '17sp'
+        size_hint: (None, None)
+        width: '20sp' if root.is_list_item == True else '0sp'
+        height: self.texture_size[1]
+
+    Label:
+        text: f"[b]{root.label_title}[/b]: {root.label_text}"
+        markup: True
+        color: utils.get_color_from_hex("#000000")
+        font_size: '17sp'
+        halign: 'left'
+        size_hint: (None, None)
+        width: self.texture_size[0]
+        height: self.texture_size[1]
+
+    Widget:
+
+
+<AppButton>:    
+    text: root.button_text
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    font_size: '24dp'
+
+    canvas.before:
+        Color:
+            rgba: root.curr_color if self.state == 'normal' else root.curr_color_pressed
+
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [15]
+
+
+<CustomRadioItem>:
+    orientation: 'horizontal'
+    size_hint_y: None
+    height: '30dp'          # Set a standard height
+    spacing: '5dp'          # Space between the radio and text
+    padding: ['10dp', '5dp']  # Space from the left edge
+    
+    # --- Part 1: The Radio Circle (Bullet) ---
+    Widget:
+        id: radio_part
+        size_hint_x: None
+        width: '18dp'       # Matches the height for a square aspect
+        
+        canvas.before:
+            # 1. Dark Gray border/ring
+            Color:
+                rgba: 0.35, 0.35, 0.35, 1  # Medium-dark gray border
+            Line:
+                width: 2.2
+                ellipse: (self.x, self.y, self.width, self.height)
+            
+            # 2. Fill Color (Depends on the `is_selected` property)
+            Color:
+                # If selected, use a custom teal-green; else, use standard light gray
+                rgba: utils.get_color_from_hex('#4CAF50') if root.is_selected else [0.75, 0.75, 0.75, 1]
+            Ellipse:
+                pos: self.pos
+                size: self.size
+                # Ensure the fill is inside the line border
+                source: '' if root.is_selected else 'atlas://data/images/defaulttheme/checkbox_off' # Optional texture for depth
+                
+    # --- Part 2: The Text Label ---
+    Label:
+        id: label_part
+        text: root.text_content
+        color: 0, 0, 0, 1       # Black text
+        halign: 'left'          # Center align left
+        valign: 'middle'        # Center align middle
+        text_size: self.size    # Allow the label to fill and align
+        markup: True            # Required for the scientific name formatting
+        font_size: '14sp'
+
+
+
+<CustomToggleSwitch>:
+    size_hint: (None, None)
+    width: '82dp'
+    height: '40dp'
+
+    canvas.before:
+        Color:
+            rgba: utils.get_color_from_hex('#403F3F')
+        
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [20]
+
+        Color:
+            rgba: utils.get_color_from_hex('#7DBF9E') if self.is_selected else utils.get_color_from_hex('#aaaaaa')
+
+        Ellipse:
+            size: (26, 26)
+            pos:
+                ((self.x + self.width - 26 - 5) if self.is_selected else (self.x + 5),
+                self.y + self.height/2 - 13 )
+

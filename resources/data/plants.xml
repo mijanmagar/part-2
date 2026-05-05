@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<garden_database>
+    <plant id="1001">
+        <scientific_name>Lilium orientalis 'Stargazer'</scientific_name>
+        <common_name>Stargazer Lily</common_name>
+        <image_path>assets/stargazer.png</image_path>
+        <maintenance>
+            <weekly_water>1-2 inches; keep soil moist.</weekly_water>
+            <lighting>Full sun to partial shade.</lighting>
+            <pruning>Deadhead spent blooms to the stem.</pruning>
+            <soil_nutrition>Well-drained, acidic soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Toxic to cats.</tip>
+            <tip>Remove anthers to prevent staining.</tip>
+        </tips>
+        <daily_maint_time>00:05:00</daily_maint_time>
+    </plant>
+    <plant id="1002">
+        <scientific_name>Lavandula angustifolia</scientific_name>
+        <common_name>English Lavender</common_name>
+        <image_path>assets/lavender.png</image_path>
+        <maintenance>
+            <weekly_water>Low; water only when dry.</weekly_water>
+            <lighting>Full sun (8+ hours).</lighting>
+            <pruning>Prune by 1/3 in early spring.</pruning>
+            <soil_nutrition>Lean, sandy, well-draining soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Attracts bees and butterflies.</tip>
+            <tip>Dry flowers for sachets.</tip>
+        </tips>
+        <daily_maint_time>00:02:30</daily_maint_time>
+    </plant>
+    <plant id="1003">
+        <scientific_name>Rosa 'Peace'</scientific_name>
+        <common_name>Hybrid Tea Rose</common_name>
+        <image_path>assets/rose.png</image_path>
+        <maintenance>
+            <weekly_water>2 inches; water at the base.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Prune heavily in late winter.</pruning>
+            <soil_nutrition>Rich organic matter; rose food monthly.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Watch for black spot fungi.</tip>
+            <tip>Mulch heavily to retain moisture.</tip>
+        </tips>
+        <daily_maint_time>00:10:00</daily_maint_time>
+    </plant>
+    <plant id="1004">
+        <scientific_name>Hydrangea macrophylla</scientific_name>
+        <common_name>Bigleaf Hydrangea</common_name>
+        <image_path>assets/hydrangea.png</image_path>
+        <maintenance>
+            <weekly_water>High; soil must stay damp.</weekly_water>
+            <lighting>Morning sun, afternoon shade.</lighting>
+            <pruning>Prune after flowering ends.</pruning>
+            <soil_nutrition>Acidic soil for blue, alkaline for pink.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Wilts quickly in extreme heat.</tip>
+        </tips>
+        <daily_maint_time>00:04:00</daily_maint_time>
+    </plant>
+    <plant id="1005">
+        <scientific_name>Tulipa gesneriana</scientific_name>
+        <common_name>Garden Tulip</common_name>
+        <image_path>assets/tulip.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate during growth.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Cut foliage only after it turns yellow.</pruning>
+            <soil_nutrition>Well-drained; bulb fertilizer in fall.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Plant bulbs 6 inches deep in autumn.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1006">
+        <scientific_name>Peonia lactiflora</scientific_name>
+        <common_name>Chinese Peony</common_name>
+        <image_path>assets/peony.png</image_path>
+        <maintenance>
+            <weekly_water>1 inch per week.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Cut to ground after first frost.</pruning>
+            <soil_nutrition>Rich, fertile, well-draining soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Needs ants to help blooms open.</tip>
+            <tip>Do not plant too deep.</tip>
+        </tips>
+        <daily_maint_time>00:03:00</daily_maint_time>
+    </plant>
+    <plant id="1007">
+        <scientific_name>Helianthus annuus</scientific_name>
+        <common_name>Common Sunflower</common_name>
+        <image_path>assets/sunflower.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate; drought tolerant.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>None required.</pruning>
+            <soil_nutrition>Not picky; tolerates poor soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>May require staking for tall varieties.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+    <plant id="1008">
+        <scientific_name>Chrysanthemum morifolium</scientific_name>
+        <common_name>Garden Mum</common_name>
+        <image_path>assets/mum.png</image_path>
+        <maintenance>
+            <weekly_water>Keep consistently moist.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Pinch back in early summer for bushiness.</pruning>
+            <soil_nutrition>Balanced fertilizer every 2 weeks.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Classic choice for autumn color.</tip>
+        </tips>
+        <daily_maint_time>00:05:00</daily_maint_time>
+    </plant>
+    <plant id="1009">
+        <scientific_name>Dahlia hortensis</scientific_name>
+        <common_name>Garden Dahlia</common_name>
+        <image_path>assets/dahlia.png</image_path>
+        <maintenance>
+            <weekly_water>2-3 times per week.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Deadhead to encourage more blooms.</pruning>
+            <soil_nutrition>High nitrogen early; high potash later.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Tubers must be lifted in cold climates.</tip>
+        </tips>
+        <daily_maint_time>00:06:00</daily_maint_time>
+    </plant>
+    <plant id="1010">
+        <scientific_name>Iris germanica</scientific_name>
+        <common_name>Bearded Iris</common_name>
+        <image_path>assets/iris.png</image_path>
+        <maintenance>
+            <weekly_water>Low; do not overwater rhizomes.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Remove bloom stalks after flowering.</pruning>
+            <soil_nutrition>Low nitrogen fertilizer.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Ensure the rhizome is partially exposed.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+
+    <plant id="1011">
+        <scientific_name>Monstera deliciosa</scientific_name>
+        <common_name>Swiss Cheese Plant</common_name>
+        <image_path>assets/monstera.png</image_path>
+        <maintenance>
+            <weekly_water>Water when top inch is dry.</weekly_water>
+            <lighting>Bright indirect light.</lighting>
+            <pruning>Trim aerial roots if needed.</pruning>
+            <soil_nutrition>Peat-based potting mix.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Wipe leaves to remove dust.</tip>
+        </tips>
+        <daily_maint_time>00:03:00</daily_maint_time>
+    </plant>
+    <plant id="1012">
+        <scientific_name>Sansevieria trifasciata</scientific_name>
+        <common_name>Snake Plant</common_name>
+        <image_path>assets/snake_plant.png</image_path>
+        <maintenance>
+            <weekly_water>Very low; every 2-3 weeks.</weekly_water>
+            <lighting>Any light; tolerates low light.</lighting>
+            <pruning>Rarely needed.</pruning>
+            <soil_nutrition>Cactus or succulent mix.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Excellent for air purification.</tip>
+            <tip>Hard to kill; great for beginners.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1013">
+        <scientific_name>Chlorophytum comosum</scientific_name>
+        <common_name>Spider Plant</common_name>
+        <image_path>assets/spider_plant.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate; keep slightly moist.</weekly_water>
+            <lighting>Bright indirect light.</lighting>
+            <pruning>Trim brown tips if they appear.</pruning>
+            <soil_nutrition>Standard potting soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Produces "pups" for easy propagation.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+    <plant id="1014">
+        <scientific_name>Spathiphyllum</scientific_name>
+        <common_name>Peace Lily</common_name>
+        <image_path>assets/peace_lily.png</image_path>
+        <maintenance>
+            <weekly_water>High; will droop when thirsty.</weekly_water>
+            <lighting>Low to medium light.</lighting>
+            <pruning>Cut dead flower stalks at base.</pruning>
+            <soil_nutrition>Balanced indoor plant food.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Sensitive to chlorine in tap water.</tip>
+        </tips>
+        <daily_maint_time>00:04:00</daily_maint_time>
+    </plant>
+    <plant id="1015">
+        <scientific_name>Ficus lyrata</scientific_name>
+        <common_name>Fiddle Leaf Fig</common_name>
+        <image_path>assets/flf.png</image_path>
+        <maintenance>
+            <weekly_water>Water when top 2 inches are dry.</weekly_water>
+            <lighting>Bright filtered light.</lighting>
+            <pruning>Prune to maintain height.</pruning>
+            <soil_nutrition>High-quality potting soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Does not like being moved.</tip>
+            <tip>Avoid cold drafts.</tip>
+        </tips>
+        <daily_maint_time>00:05:00</daily_maint_time>
+    </plant>
+    <plant id="1016">
+        <scientific_name>Epipremnum aureum</scientific_name>
+        <common_name>Golden Pothos</common_name>
+        <image_path>assets/pothos.png</image_path>
+        <maintenance>
+            <weekly_water>Allow soil to dry out.</weekly_water>
+            <lighting>Low to bright indirect.</lighting>
+            <pruning>Trim vines to control length.</pruning>
+            <soil_nutrition>General purpose fertilizer.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Vines can grow over 10 feet long.</tip>
+        </tips>
+        <daily_maint_time>00:01:30</daily_maint_time>
+    </plant>
+    <plant id="1017">
+        <scientific_name>Calathea orbifolia</scientific_name>
+        <common_name>Orbifolia Prayer Plant</common_name>
+        <image_path>assets/calathea.png</image_path>
+        <maintenance>
+            <weekly_water>Keep consistently damp.</weekly_water>
+            <lighting>Medium to low light; no direct sun.</lighting>
+            <pruning>Remove older yellow leaves.</pruning>
+            <soil_nutrition>Well-draining rich soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Requires high humidity; mist often.</tip>
+        </tips>
+        <daily_maint_time>00:04:00</daily_maint_time>
+    </plant>
+    <plant id="1018">
+        <scientific_name>Zamioculcas zamiifolia</scientific_name>
+        <common_name>ZZ Plant</common_name>
+        <image_path>assets/zz.png</image_path>
+        <maintenance>
+            <weekly_water>Very low; every 3-4 weeks.</weekly_water>
+            <lighting>Very low to bright indirect.</lighting>
+            <pruning>Rarely needed.</pruning>
+            <soil_nutrition>Well-draining soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Extremely drought tolerant.</tip>
+            <tip>Naturally shiny leaves.</tip>
+        </tips>
+        <daily_maint_time>00:00:45</daily_maint_time>
+    </plant>
+    <plant id="1019">
+        <scientific_name>Alocasia amazonica</scientific_name>
+        <common_name>African Mask Plant</common_name>
+        <image_path>assets/alocasia.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate; likes humidity.</weekly_water>
+            <lighting>Bright indirect light.</lighting>
+            <pruning>Trim damaged leaves.</pruning>
+            <soil_nutrition>Loose, well-aerated mix.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Goes dormant in winter.</tip>
+        </tips>
+        <daily_maint_time>00:03:00</daily_maint_time>
+    </plant>
+    <plant id="1020">
+        <scientific_name>Philodendron hederaceum</scientific_name>
+        <common_name>Heartleaf Philodendron</common_name>
+        <image_path>assets/philo.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate; dry between waterings.</weekly_water>
+            <lighting>Low to medium light.</lighting>
+            <pruning>Prune to encourage fuller growth.</pruning>
+            <soil_nutrition>All-purpose indoor food.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Very easy to propagate in water.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+
+    <plant id="1021">
+        <scientific_name>Ocimum basilicum</scientific_name>
+        <common_name>Sweet Basil</common_name>
+        <image_path>assets/basil.png</image_path>
+        <maintenance>
+            <weekly_water>Keep soil moist.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Pinch off flower heads immediately.</pruning>
+            <soil_nutrition>Fertile, well-drained soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Harvest leaves from the top down.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+    <plant id="1022">
+        <scientific_name>Rosmarinus officinalis</scientific_name>
+        <common_name>Rosemary</common_name>
+        <image_path>assets/rosemary.png</image_path>
+        <maintenance>
+            <weekly_water>Low; drought tolerant once set.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Prune to shape as a shrub.</pruning>
+            <soil_nutrition>Sandy, poor soil is okay.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Needs good air circulation.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1023">
+        <scientific_name>Mentha spicata</scientific_name>
+        <common_name>Spearmint</common_name>
+        <image_path>assets/mint.png</image_path>
+        <maintenance>
+            <weekly_water>High; keep soil wet.</weekly_water>
+            <lighting>Partial shade to full sun.</lighting>
+            <pruning>Cut back often to prevent leggy-ness.</pruning>
+            <soil_nutrition>Standard garden soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Highly invasive; plant in pots.</tip>
+        </tips>
+        <daily_maint_time>00:03:00</daily_maint_time>
+    </plant>
+    <plant id="1024">
+        <scientific_name>Solanum lycopersicum</scientific_name>
+        <common_name>Tomato (Cherry)</common_name>
+        <image_path>assets/tomato.png</image_path>
+        <maintenance>
+            <weekly_water>2 inches; keep consistent.</weekly_water>
+            <lighting>Full sun (8+ hours).</lighting>
+            <pruning>Remove suckers between branches.</pruning>
+            <soil_nutrition>High phosphorus fertilizer.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Needs a cage or stake for support.</tip>
+        </tips>
+        <daily_maint_time>00:08:00</daily_maint_time>
+    </plant>
+    <plant id="1025">
+        <scientific_name>Fragaria ananassa</scientific_name>
+        <common_name>Garden Strawberry</common_name>
+        <image_path>assets/strawberry.png</image_path>
+        <maintenance>
+            <weekly_water>1-2 inches per week.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Remove runners to increase fruit size.</pruning>
+            <soil_nutrition>Acidic, rich soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Mulch with straw to keep fruit off dirt.</tip>
+        </tips>
+        <daily_maint_time>00:05:00</daily_maint_time>
+    </plant>
+    <plant id="1026">
+        <scientific_name>Thymus vulgaris</scientific_name>
+        <common_name>Common Thyme</common_name>
+        <image_path>assets/thyme.png</image_path>
+        <maintenance>
+            <weekly_water>Low.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Cut back after flowering.</pruning>
+            <soil_nutrition>Well-drained, gritty soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Works well as a ground cover.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1027">
+        <scientific_name>Lavandula x intermedia</scientific_name>
+        <common_name>French Lavender</common_name>
+        <image_path>assets/french_lavender.png</image_path>
+        <maintenance>
+            <weekly_water>Low; allow to dry.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Shape in autumn.</pruning>
+            <soil_nutrition>Alkaline soil preferred.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Stronger scent than English variety.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+    <plant id="1028">
+        <scientific_name>Salvia officinalis</scientific_name>
+        <common_name>Common Sage</common_name>
+        <image_path>assets/sage.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate to low.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Cut back woody stems in spring.</pruning>
+            <soil_nutrition>Rich, well-draining soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Leaves are best used fresh.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+    <plant id="1029">
+        <scientific_name>Coriandrum sativum</scientific_name>
+        <common_name>Cilantro</common_name>
+        <image_path>assets/cilantro.png</image_path>
+        <maintenance>
+            <weekly_water>Consistent moisture.</weekly_water>
+            <lighting>Full sun to partial shade.</lighting>
+            <pruning>Harvest leaves early.</pruning>
+            <soil_nutrition>Standard garden mix.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Bolts quickly in high heat.</tip>
+        </tips>
+        <daily_maint_time>00:01:30</daily_maint_time>
+    </plant>
+    <plant id="1030">
+        <scientific_name>Capsicum annuum</scientific_name>
+        <common_name>Bell Pepper</common_name>
+        <image_path>assets/pepper.png</image_path>
+        <maintenance>
+            <weekly_water>1.5 inches per week.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>None usually required.</pruning>
+            <soil_nutrition>High potassium fertilizer.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Peppers turn from green to red as they ripen.</tip>
+        </tips>
+        <daily_maint_time>00:04:00</daily_maint_time>
+    </plant>
+
+    <plant id="1031">
+        <scientific_name>Aloe barbadensis miller</scientific_name>
+        <common_name>Aloe Vera</common_name>
+        <image_path>assets/aloe.png</image_path>
+        <maintenance>
+            <weekly_water>Deep soak every 3 weeks.</weekly_water>
+            <lighting>Bright direct/indirect sun.</lighting>
+            <pruning>Remove pups to a new pot.</pruning>
+            <soil_nutrition>Cactus/Succulent mix.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Gel can be used for minor burns.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1032">
+        <scientific_name>Echeveria elegans</scientific_name>
+        <common_name>Mexican Snowball</common_name>
+        <image_path>assets/echeveria.png</image_path>
+        <maintenance>
+            <weekly_water>Soak and dry method.</weekly_water>
+            <lighting>Bright light.</lighting>
+            <pruning>Remove dead bottom leaves.</pruning>
+            <soil_nutrition>Fast-draining soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Do not get water in the rosette center.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1033">
+        <scientific_name>Crassula ovata</scientific_name>
+        <common_name>Jade Plant</common_name>
+        <image_path>assets/jade.png</image_path>
+        <maintenance>
+            <weekly_water>Low; water when leaves feel soft.</weekly_water>
+            <lighting>Bright sunlight.</lighting>
+            <pruning>Prune to maintain tree shape.</pruning>
+            <soil_nutrition>Well-draining mix.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Considered a symbol of good luck.</tip>
+        </tips>
+        <daily_maint_time>00:01:30</daily_maint_time>
+    </plant>
+    <plant id="1034">
+        <scientific_name>Sedum morganianum</scientific_name>
+        <common_name>Burro's Tail</common_name>
+        <image_path>assets/burro.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate in summer, low in winter.</weekly_water>
+            <lighting>Bright partial sun.</lighting>
+            <pruning>Be careful; leaves fall off easily.</pruning>
+            <soil_nutrition>Gritty cactus soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Best grown in a hanging basket.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1035">
+        <scientific_name>Schlumbergera</scientific_name>
+        <common_name>Christmas Cactus</common_name>
+        <image_path>assets/xmas_cactus.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate; keep slightly moist.</weekly_water>
+            <lighting>Filtered bright light.</lighting>
+            <pruning>Prune after flowering.</pruning>
+            <soil_nutrition>Rich, well-draining soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Needs cool nights to set flower buds.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+    <plant id="1036">
+        <scientific_name>Haworthia fasciata</scientific_name>
+        <common_name>Zebra Plant</common_name>
+        <image_path>assets/zebra.png</image_path>
+        <maintenance>
+            <weekly_water>Low; dry out completely.</weekly_water>
+            <lighting>Partial sun to bright indirect.</lighting>
+            <pruning>None.</pruning>
+            <soil_nutrition>Cactus soil mix.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Tolerates lower light than most succulents.</tip>
+        </tips>
+        <daily_maint_time>00:00:30</daily_maint_time>
+    </plant>
+    <plant id="1037">
+        <scientific_name>Opuntia ficus-indica</scientific_name>
+        <common_name>Prickly Pear</common_name>
+        <image_path>assets/cactus.png</image_path>
+        <maintenance>
+            <weekly_water>Very low.</weekly_water>
+            <lighting>Full direct sun.</lighting>
+            <pruning>Remove pads with tongs only.</pruning>
+            <soil_nutrition>Sandy, poor soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Watch out for invisible glochids (spines).</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1038">
+        <scientific_name>Senecio rowleyanus</scientific_name>
+        <common_name>String of Pearls</common_name>
+        <image_path>assets/pearls.png</image_path>
+        <maintenance>
+            <weekly_water>Low; water when pearls shrivel.</weekly_water>
+            <lighting>Bright indirect light.</lighting>
+            <pruning>Trim strings to desired length.</pruning>
+            <soil_nutrition>Cactus/succulent soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Highly toxic if ingested.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+    <plant id="1039">
+        <scientific_name>Sempervivum tectorum</scientific_name>
+        <common_name>Hens and Chicks</common_name>
+        <image_path>assets/hens_chicks.png</image_path>
+        <maintenance>
+            <weekly_water>Minimal.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Remove "hen" after it flowers.</pruning>
+            <soil_nutrition>Thrives in rock gardens.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Very cold hardy succulent.</tip>
+        </tips>
+        <daily_maint_time>00:00:30</daily_maint_time>
+    </plant>
+    <plant id="1040">
+        <scientific_name>Agave americana</scientific_name>
+        <common_name>Century Plant</common_name>
+        <image_path>assets/agave.png</image_path>
+        <maintenance>
+            <weekly_water>Low once established.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>None.</pruning>
+            <soil_nutrition>Sandy/Gritty soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Grows very large; give it space.</tip>
+        </tips>
+        <daily_maint_time>00:01:00</daily_maint_time>
+    </plant>
+
+    <plant id="1041">
+        <scientific_name>Buxus sempervirens</scientific_name>
+        <common_name>Common Boxwood</common_name>
+        <image_path>assets/boxwood.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate; keep roots cool.</weekly_water>
+            <lighting>Full sun to partial shade.</lighting>
+            <pruning>Shear to shape in summer.</pruning>
+            <soil_nutrition>Balanced organic mulch.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Smell can be polarizing; some find it musty.</tip>
+        </tips>
+        <daily_maint_time>00:05:00</daily_maint_time>
+    </plant>
+    <plant id="1042">
+        <scientific_name>Acer palmatum</scientific_name>
+        <common_name>Japanese Maple</common_name>
+        <image_path>assets/j_maple.png</image_path>
+        <maintenance>
+            <weekly_water>Keep moist; do not allow to dry.</weekly_water>
+            <lighting>Dappled shade preferred.</lighting>
+            <pruning>Minimal; only dead wood.</pruning>
+            <soil_nutrition>Acidic, well-draining soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Leaves scorch easily in high wind.</tip>
+        </tips>
+        <daily_maint_time>00:03:00</daily_maint_time>
+    </plant>
+    <plant id="1043">
+        <scientific_name>Syringa vulgaris</scientific_name>
+        <common_name>Common Lilac</common_name>
+        <image_path>assets/lilac.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate.</weekly_water>
+            <lighting>Full sun (needed for blooms).</lighting>
+            <pruning>Prune immediately after flowering.</pruning>
+            <soil_nutrition>Neutral to slightly alkaline soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Requires cold winters to bloom well.</tip>
+        </tips>
+        <daily_maint_time>00:04:00</daily_maint_time>
+    </plant>
+    <plant id="1044">
+        <scientific_name>Gardenia jasminoides</scientific_name>
+        <common_name>Gardenia</common_name>
+        <image_path>assets/gardenia.png</image_path>
+        <maintenance>
+            <weekly_water>1 inch per week.</weekly_water>
+            <lighting>Full sun to light shade.</lighting>
+            <pruning>Prune after flowers fade.</pruning>
+            <soil_nutrition>Acid-loving plant fertilizer.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Very sensitive to changes in environment.</tip>
+        </tips>
+        <daily_maint_time>00:06:00</daily_maint_time>
+    </plant>
+    <plant id="1045">
+        <scientific_name>Azalea indica</scientific_name>
+        <common_name>Indian Azalea</common_name>
+        <image_path>assets/azalea.png</image_path>
+        <maintenance>
+            <weekly_water>Consistently moist.</weekly_water>
+            <lighting>Filtered sun.</lighting>
+            <pruning>Prune late spring.</pruning>
+            <soil_nutrition>Rich acidic soil; pine needle mulch.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Best planted in groups for impact.</tip>
+        </tips>
+        <daily_maint_time>00:04:00</daily_maint_time>
+    </plant>
+    <plant id="1046">
+        <scientific_name>Hibiscus rosa-sinensis</scientific_name>
+        <common_name>Tropical Hibiscus</common_name>
+        <image_path>assets/hibiscus.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate to high; likes humidity.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Prune in spring for shape.</pruning>
+            <soil_nutrition>High potassium fertilizer.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Flowers only last for one day.</tip>
+        </tips>
+        <daily_maint_time>00:03:00</daily_maint_time>
+    </plant>
+    <plant id="1047">
+        <scientific_name>Lagerstroemia</scientific_name>
+        <common_name>Crepe Myrtle</common_name>
+        <image_path>assets/myrtle.png</image_path>
+        <maintenance>
+            <weekly_water>Moderate once established.</weekly_water>
+            <lighting>Full sun.</lighting>
+            <pruning>Prune in late winter; avoid topping.</pruning>
+            <soil_nutrition>Balanced fertilizer in spring.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Beautiful peeling bark in winter.</tip>
+        </tips>
+        <daily_maint_time>00:02:00</daily_maint_time>
+    </plant>
+    <plant id="1048">
+        <scientific_name>Thuja occidentalis</scientific_name>
+        <common_name>Emerald Green Arborvitae</common_name>
+        <image_path>assets/thuja.png</image_path>
+        <maintenance>
+            <weekly_water>1 inch per week; deep watering.</weekly_water>
+            <lighting>Full sun to partial shade.</lighting>
+            <pruning>Shear tips for height control.</pruning>
+            <soil_nutrition>Compost-rich soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Popular for privacy screens.</tip>
+        </tips>
+        <daily_maint_time>00:05:00</daily_maint_time>
+    </plant>
+    <plant id="1049">
+        <scientific_name>Rhododendron</scientific_name>
+        <common_name>Rhododendron</common_name>
+        <image_path>assets/rhody.png</image_path>
+        <maintenance>
+            <weekly_water>Consistent moisture; keep roots cool.</weekly_water>
+            <lighting>Dappled sunlight.</lighting>
+            <pruning>Deadhead blooms carefully.</pruning>
+            <soil_nutrition>Acidic soil (pH 4.5-6.0).</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>Shallow roots; avoid deep cultivation nearby.</tip>
+        </tips>
+        <daily_maint_time>00:04:00</daily_maint_time>
+    </plant>
+    <plant id="1050">
+        <scientific_name>Cornus florida</scientific_name>
+        <common_name>Flowering Dogwood</common_name>
+        <image_path>assets/dogwood.png</image_path>
+        <maintenance>
+            <weekly_water>Weekly; avoid drought stress.</weekly_water>
+            <lighting>Partial shade.</lighting>
+            <pruning>Minimal; prune only dead wood.</pruning>
+            <soil_nutrition>Organic-rich, acidic soil.</soil_nutrition>
+        </maintenance>
+        <tips>
+            <tip>State tree of several U.S. states.</tip>
+        </tips>
+        <daily_maint_time>00:03:00</daily_maint_time>
+    </plant>
+</garden_database>

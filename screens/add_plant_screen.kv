@@ -1,0 +1,92 @@
+#:kivy 1.0
+
+<AddPlantScreen>:
+    lstPlantChoiceList: lstPlantChoiceList
+    txtPotIDInput: txtPotIDInputBox
+    txtPlantFilter: txtPlantFilter
+    
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 20
+
+        BoxLayout:
+            orientation: 'horizontal'
+            padding: 5
+            spacing: 5
+            size_hint: (1, None)
+            height: '50dp'
+
+            Label:
+                text: 'Pot Tag #'
+                color: (0, 0, 0, 1)
+                font_size: '21dp'
+
+            Textbox:
+                id: txtPotIDInputBox
+                hint_text: 'Enter Pot Tag'
+
+
+        Textbox:
+            hint_text: 'Filter Plants'
+            id: txtPlantFilter
+            size_hint: (1, None)
+            height: '50dp'
+            on_text: root.on_filter_change()
+
+
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#D8D8D8")
+
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+
+            BoxLayout:
+                orientation: 'vertical'
+                id: lstPlantChoiceList
+                size_hint: (1, None)
+                height: self.minimum_height
+                
+                # This is used to test the options list with dummy data.
+                #CustomRadioItem:
+                #    text_content: "Stargazer Lily (Lilium orientalis 'Stargazer')"
+                #CustomRadioItem:
+                #    text_content: "English Lavender ([i]Lavandula angustifolia[/i])"
+                #    is_selected: True       # The second item is selected in image_0.png
+                #CustomRadioItem:
+                #    text_content: "Hybrid Tea Rose (Rosa 'Peace')"
+                #CustomRadioItem:
+                #    text_content: "Bigleaf Hydrangea (Hydrangea macrophylla)"
+                #CustomRadioItem:
+                #    text_content: "Garden Tulip (Tulipa gesneriana)"
+
+        Label:
+            text: f"[b]{root.error_message}[/b]"
+            color:  utils.get_color_from_hex("#b30000")
+            size_hint: (1, None)
+            height: self.texture_size[1]
+            text_size: self.width, None
+            halign: 'center'
+            markup: True
+
+        AppButton:
+            button_text: 'Confirm'
+            curr_color: self.color_green
+            curr_color_pressed: self.color_green_pressed
+            size_hint: (1, None)
+            height: '50dp'
+
+            on_press: root.on_confirm_press()
+
+        AppButton:
+            button_text: 'Cancel'
+            size_hint: (1, None)
+            height: '50dp'
+

@@ -1,0 +1,108 @@
+#:kivy 1.0
+#:import os os
+#:import utils kivy.utils
+
+<AppShell>:
+    orientation: 'vertical'
+
+    #-----------------Title Bar--------------------
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint: (1, None)
+        height: '113sp'
+    
+        canvas.before:
+            Color: 
+                rgba: utils.get_color_from_hex('#D9D9D9')
+            
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Image:
+            source:  app.base_path +  '/resources/images/logo.png'
+            size_hint: (None, None)
+            hieght: self.height
+            width: '327sp'
+    
+    #-----------------Navigation Bar--------------------
+    BoxLayout:
+        padding: (4)
+        size_hint: (1, None)
+        height: '39sp'
+
+        Label:
+            text: root.navigation_text
+            halign: 'left'
+            valign: 'middle'
+            text_size: self.size
+            padding: (3, 0)
+
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex('#474747')
+
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+    
+    #-----------------Body--------------------
+    ScreenManager:
+        id: sm
+
+        HomeScreen:
+            name: 'home'
+
+        SettingsScreen:
+            name: 'settings'
+        
+        AddPlantScreen:
+            name: 'add_plant'
+        
+        PlantDetailScreen:
+            name: 'plant_detail'
+    
+    #-----------------Tool Bar--------------------    
+    BoxLayout:
+        size_hint: (1, None)
+        height: '67sp'
+
+
+        canvas.before:
+            Color: 
+                rgba: utils.get_color_from_hex('#D9D9D9')
+            
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        BoxLayout:
+            size_hint: (None, 1)
+            width: '62sp'
+
+            ImageButton:
+                source: app.base_path + '/resources/images/back_icon.png'
+                opacity: 0 if root.is_home else 1
+                disabled: True if root.is_home else False
+                on_press: root.change_screen("home")
+
+        AnchorLayout:
+            ImageButton:
+                source: app.base_path + '/resources/images/plus_icon.png' if root.is_home else app.base_path + '/resources/images/home_icon.png' 
+                on_press: root.change_screen('add_plant') if root.is_home else root.change_screen('home')
+
+        BoxLayout:
+            size_hint: (None, 1)
+            width: '62sp'
+
+            Widget:
+                size_hint_x: 1
+
+            ImageButton:
+                size_hint: (None, 1)
+                width: '50sp'
+                source: app.base_path + '/resources/images/settings_icon.png'
+                on_press: root.change_screen('settings')
+                
+

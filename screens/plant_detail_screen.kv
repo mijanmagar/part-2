@@ -1,0 +1,119 @@
+#:kivy 1.0
+#:import utils kivy.utils
+
+<PlantDetailScreen>:
+    bxlTipsList: bxlTipsList
+    BoxLayout:
+        orientation: 'vertical'    
+        padding: (10)
+        spacing: 20
+
+#--------------------------Avatar and Pot ID-----------------------------
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1, None)
+            height: 80
+
+            Image:
+                source: app.base_path + "\\resources\\images\\plant_images\\lilly.png"
+                size_hint: (None, None)
+                size: (80, 80)
+
+            Label:
+                text: f"Pot #{root.pot_id}"
+                font_size: '50dp'
+                color: utils.get_color_from_hex("#000000")
+
+#--------------------------Plant Details-----------------------------
+
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#D8D8D8")
+
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint: (1, None)
+                height: self.minimum_height
+
+                InformationLabel:
+                    label_title: "Scientific Name"
+                    label_text: root.scientific_name
+
+                InformationLabel: 
+                    label_title: "Common Name"
+                    label_text: root.common_name
+
+                DetailTitleLabel:
+                    title_text: "Plant Care and Maintenance"
+                    padding: (0, 20)
+
+                InformationLabel: 
+                    label_title: "Water Needs"
+                    label_text: root.water_needs
+                    is_list_item: True
+                
+                InformationLabel: 
+                    label_title: "Lighting"
+                    label_text: root.lighting
+                    is_list_item: True
+                
+                InformationLabel: 
+                    label_title: "Pruning"
+                    label_text: root.pruning
+                    is_list_item: True
+                
+                InformationLabel: 
+                    label_title: "Soil and Nutrition"
+                    label_text: root.soil
+                    is_list_item: True
+
+                DetailTitleLabel:
+                    title_text: "Tips"
+                    padding: (0, 20)
+
+                BoxLayout:
+                    orientation: 'vertical'
+                    id: bxlTipsList
+                    size_hint: (1, None)  
+                    height: self.minimum_height
+
+                Widget:
+
+        #--------------------------Maintenance Reminder Time-----------------------------
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1, None)
+            height: '50sp'
+            padding: 5
+
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#DFDFDF")
+                
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [13]
+
+            Label:
+                text: "[b]Daily Maint. Time[/b]"
+                markup: True
+                color: (0, 0, 0, 1)
+
+            Textbox:
+                hint_text: "HH:MM:SS"
+
+            
+
+    
+
+    

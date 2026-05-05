@@ -1,0 +1,85 @@
+#:kivy 1.0
+#:import utils kivy.utils
+
+<HomeScreen>:
+    pot_list: container
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: (10)
+
+        Label:
+            text: "My Plants"
+            color: (0, 0, 0, 1)
+            font_size: "40sp"
+            size_hint: (1, None)
+            height: 100
+
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+
+            GridLayout:
+                id: container
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height  # This is the "magic" line
+                row_default_height: '80dp'
+                row_force_default: True
+                spacing: 5
+
+                #PotListItem:
+                #    file_name: "daisy.png"
+                
+                #PotListItem:
+                #    file_name: "rose.png"
+                
+                #PotListItem:
+                #    file_name: "tulip.png"
+                
+               # PotListItem:
+                #    file_name: "lilly.png"
+                
+                #PotListItem:
+                #    file_name: "sunflower.png"
+
+
+<PotListItem>:
+    padding: 5
+    spacing: 20
+    on_press: app.shell.change_screen("plant_detail")
+    
+    # ... your background canvas (RoundedRectangle) ...
+
+    BoxLayout: # Simple container
+        size_hint: (None, 1)
+        width: "70sp"
+        
+        # We move the drawing logic to the Image itself 
+        # so it has access to its own texture.
+        Image:
+            id: img
+            source: app.base_path + "/resources/images/plant_images/" + root.file_name
+            
+            # This is the "Magic" - We hide the default square image
+            canvas.before:
+                Color:
+                    rgba: (1, 1, 1, 1)
+                RoundedRectangle:
+                    # We bind the texture to 'self.texture'
+                    # This tells Kivy: "Wait until the file loads, then draw"
+                    texture: self.texture
+                    size: self.size
+                    pos: self.pos
+                    radius: [15]
+            
+            # Hide the original square pixels so only the RoundedRectangle shows
+            color: (1, 1, 1, 0)
+
+    Label:
+        text: root.pot_id
+        haligh: "left"
+        valign: "center"
+        text_size: self.size
+        font_size: "30sp"
+        color: utils.get_color_from_hex("#000000")

@@ -1,0 +1,79 @@
+#:kivy 1.0
+
+<SettingsScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: (1, None)
+            height: '110dp'
+            padding: 5
+            spacing: 5
+
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#D8D8D8")
+
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+
+            Label:
+                text: "[b]Font Size[/b]"
+                markup: True
+                font_size: '30sp'
+                color: (0, 0, 0, 1)
+            
+            BoxLayout:
+                orientation: 'horizontal'
+                
+                CustomRadioItem:
+                    text_content: "Small"
+
+                CustomRadioItem:
+                    text_content: "Medium"
+
+                CustomRadioItem:
+                    text_content: "Large"
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: (1, None)
+            height: '110dp'
+            padding: 5
+            spacing: 5
+
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#D8D8D8")
+
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [6]
+            Widget:
+            Label:
+                text: "[b]Notifications:[/b]"
+                markup: True
+                font_size: '30sp'
+                color: (0, 0, 0, 1)
+                size_hint: (None, 1)
+                width: self.texture_size[0]
+
+            BoxLayout:
+                orientation: 'vertical'
+                Widget:
+                CustomToggleSwitch:
+                Widget:
+            Widget:
+
+        Widget:
+
+        AppButton:
+            button_text: 'Reset App Data'
+            curr_color: self.color_red
+            curr_color_pressed: self.color_red_pressed

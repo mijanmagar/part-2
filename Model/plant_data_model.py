@@ -33,27 +33,20 @@ class PlantDataModel:
             self.__data[plant_item.id] = plant_item
 
     def ListAllPlants(self):
-        pass # remove this when method is implemented
-        # Hint: use the "values" method on the data dictionary
-        # and return the list to complete this method.
+        return list(self.__data.values())
     
     def ListPlantsWithCommonName(self, filter):
-        pass # remove this when the method is completed.
-        # 1. If the filter is an empty string, return all plants by callind
-        #    ListAllPlants
+        if filter == '':
+            return self.ListAllPlants()
         
-        # 2. Otherwise, create an empty list and loop through the plant data.
-        # 
-            # 2-a. If the filter string is a substring of this plant,
-            # then append it to the result list.
-            # note that it should be case-INsensitive (meaning upper-case and 
-            # lower-case shouldn't matter).
-
-        # Return the filtered result
+        result = []
+        for plant in self.__data.values():
+            if filter.lower() in plant.common_name.lower():
+                result.append(plant)
+        return result
     
     def GetPlantByID(self, id):
-        pass # remove this when method is implemented.
-        # Get the plant from the dictionary using the plant data 
+        return self.__data[id]
         
      
 if __name__ == '__main__':
@@ -69,5 +62,3 @@ if __name__ == '__main__':
     result = model.GetPlantByID('1003')
 
     print(result)
-
-
